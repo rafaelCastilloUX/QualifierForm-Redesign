@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 2 New Prequalifier Form S2R</title>
+    <!--Bootstrap Core-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/new-form-styles.css">
+</head>
+<body>    
+  <header>
+    <nav class="navbar navbar-dark">
+        <div class="container"> 
+            <a class="navbar-brand" href="#">
+                <img src="img/LogoHorizontal.svg" alt="Sell2Rent Logo" >
+            </a>     
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--  colapsados  -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Invest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <main class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="breadcrumb-form">
+                    <ul class="list-inline g-3">
+                        <li class="list-item active"></li>
+                        <li class="list-item active"></li>
+                        <li class="list-item"></li>
+                        <li class="list-item"></li>
+                        <li class="list-item"></li>
+                        <li class="list-item"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!-- Pregunta 1 -->
+                <div class="mb-3 row text-white">
+                    <div class="col-sm-12 d-flex">
+                        <h5 class="mb-0 me-2">2:</h5>
+                        <h2 class="font-poppins">Select the property type you're selling:</h2>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <!-- Opciones de respuesta -->
+                    <div class="opciones-card mb-2"> 
+                        <div class="custom-card">
+                            <input type="radio" id="sfh" name="property" value="sfh">
+                            <label for="sfh">
+                                <img src="img/singleFamilyHouse.png" class="img-fluid" alt="Single Family House">
+                                <h4>Single Family House</h4>
+                            </label>
+                        </div>
+                    
+                        <div class="custom-card">
+                            <input type="radio" id="townh" name="property" value="townh">
+                            <label for="townh">
+                                <img src="img/townhouse.png" class="img-fluid" alt="Condo">
+                                <h4>Townhouse</h4>
+                            </label>
+                        </div>
+                    
+                        <div class="custom-card">
+                            <input type="radio" id="condo" name="property" value="condo">
+                            <label for="condo">
+                                <img src="img/condo.png" class="img-fluid" alt="Condo">
+                                <h4>Condo</h4>
+                            </label>
+                        </div>
+    
+                        <div class="custom-card">
+                            <input type="radio" id="other" name="property" value="other">
+                            <label for="other">
+                                <img src="img/other.png" class="img-fluid" alt="Condo">
+                                <h4>Other</h4>
+                            </label>
+                        </div> 
+                        
+                    </div>
+                    <!-- Botón de envío -->
+                    <div class="mb-3 row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-lg  btn-ok">OK ✓</button>                            
+                        </div>
+                    </div>
+                </form>             
+            </div>        
+        </div>
+    </div>
+  </main>
+
+  <!-- end of Navbar -->
+  <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

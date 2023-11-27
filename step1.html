@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1 New Prequalifier Form S2R</title>
+    <!--Bootstrap Core-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/new-form-styles.css">
+</head>
+<body>    
+  <header>
+    <nav class="navbar navbar-dark">
+        <div class="container"> 
+            <a class="navbar-brand" href="#">
+                <img src="img/LogoHorizontal.svg" alt="Sell2Rent Logo" >
+            </a>     
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--  colapsados  -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Invest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <main class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="breadcrumb-form">
+                    <ul class="list-inline g-3">
+                        <li class="list-item active"></li>
+                        <li class="list-item"></li>
+                        <li class="list-item"></li>
+                        <li class="list-item"></li>
+                        <li class="list-item"></li>
+                        <li class="list-item"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <form>
+                <!-- Pregunta 1 -->
+                <div class="mb-3 row text-white">
+                    <div class="col-sm-12 d-flex">
+                        <h5 class="mb-0">1:</h5>
+                        <h2 class="font-poppins">Are you interested in selling your home and staying as a renter?</h2>
+                    </div>
+                </div>            
+                <!-- Opciones de respuesta -->
+                <div class="opciones mb-2"> 
+                    <div class="custom-radio">
+                        <input type="radio" id="opcion1" name="opcion" value="Sell&Stay" required>
+                        <label for="opcion1">
+                            <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                                <rect x="0.65043" y="0.65043" width="31.2206" height="31.2206" stroke="white" stroke-width="1.30086"/>
+                                <path d="M19.877 21.6475H12.649L11.453 25.1055H7.63102L14.157 6.93147H18.395L24.921 25.1055H21.073L19.877 21.6475ZM18.889 18.7355L16.263 11.1435L13.637 18.7355H18.889Z" fill="white"/>
+                            </svg>
+                            Yes, I want to Sell and Stay
+                        </label>
+                    </div>
+                
+                    <div class="custom-radio">
+                        <input type="radio" id="opcion2" name="opcion" value="Sell&MoveOut" required>
+                        <label for="opcion2">
+                            <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                                <rect x="0.75" y="0.75" width="31.0215" height="31.0215" stroke="white" stroke-width="1.5"/>
+                                <path d="M19.9972 15.7975C21.0198 15.9881 21.8605 16.4995 22.5192 17.3315C23.1778 18.1635 23.5072 19.1168 23.5072 20.1915C23.5072 21.1621 23.2645 22.0201 22.7792 22.7655C22.3112 23.4935 21.6265 24.0655 20.7252 24.4815C19.8238 24.8975 18.7578 25.1055 17.5272 25.1055H9.70117V6.95747H17.1892C18.4198 6.95747 19.4772 7.1568 20.3612 7.55547C21.2625 7.95414 21.9385 8.5088 22.3892 9.21947C22.8572 9.93013 23.0912 10.7361 23.0912 11.6375C23.0912 12.6948 22.8052 13.5788 22.2332 14.2895C21.6785 15.0001 20.9332 15.5028 19.9972 15.7975ZM13.3412 14.4455H16.6692C17.5358 14.4455 18.2032 14.2548 18.6712 13.8735C19.1392 13.4748 19.3732 12.9115 19.3732 12.1835C19.3732 11.4555 19.1392 10.8921 18.6712 10.4935C18.2032 10.0948 17.5358 9.89547 16.6692 9.89547H13.3412V14.4455ZM17.0072 22.1415C17.8912 22.1415 18.5758 21.9335 19.0612 21.5175C19.5638 21.1015 19.8152 20.5121 19.8152 19.7495C19.8152 18.9695 19.5552 18.3628 19.0352 17.9295C18.5152 17.4788 17.8132 17.2535 16.9292 17.2535H13.3412V22.1415H17.0072Z" fill="white"/>                                    
+                            </svg>
+                            No, I want to Sell and Move Out
+                        </label>
+                    </div>
+                
+                    <div class="custom-radio">
+                        <input type="radio" id="opcion3" name="opcion" value="none" required>
+                        <label for="opcion3">
+                            <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                                <rect x="0.75" y="0.75" width="31.0215" height="31.0215" stroke="white" stroke-width="1.5"/>
+                                <path d="M7.19217 16.0055C7.19217 14.2201 7.59084 12.6255 8.38817 11.2215C9.20284 9.80013 10.3035 8.69947 11.6902 7.91947C13.0942 7.12214 14.6628 6.72347 16.3962 6.72347C18.4242 6.72347 20.2008 7.24347 21.7262 8.28347C23.2515 9.32347 24.3175 10.7621 24.9242 12.5995H20.7382C20.3222 11.7328 19.7328 11.0828 18.9702 10.6495C18.2248 10.2161 17.3582 9.99947 16.3702 9.99947C15.3128 9.99947 14.3682 10.2508 13.5362 10.7535C12.7215 11.2388 12.0802 11.9321 11.6122 12.8335C11.1615 13.7348 10.9362 14.7921 10.9362 16.0055C10.9362 17.2015 11.1615 18.2588 11.6122 19.1775C12.0802 20.0788 12.7215 20.7808 13.5362 21.2835C14.3682 21.7688 15.3128 22.0115 16.3702 22.0115C17.3582 22.0115 18.2248 21.7948 18.9702 21.3615C19.7328 20.9108 20.3222 20.2521 20.7382 19.3855H24.9242C24.3175 21.2401 23.2515 22.6875 21.7262 23.7275C20.2182 24.7501 18.4415 25.2615 16.3962 25.2615C14.6628 25.2615 13.0942 24.8715 11.6902 24.0915C10.3035 23.2941 9.20284 22.1935 8.38817 20.7895C7.59084 19.3855 7.19217 17.7908 7.19217 16.0055Z" fill="white"/>
+                            </svg>
+                            Not sure yet
+                        </label>
+                    </div> 
+                </div>
+                <!-- Botón de envío -->
+                <div class="mb-3 row">
+                    <div class="col-sm-12"> 
+                        <button type="button" class="btn btn-lg  btn-ok" onclick="redirectToPage('step2.html')">OK ✓</button>                            
+                    </div>
+                </div>
+            </form>             
+        </div>
+    </div>
+  </main>
+
+  <!-- end of Navbar -->
+  <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+    function redirectToPage(ruta) {
+        window.location.href = ruta;
+    }
+</script>
+</body>
+</html>
