@@ -31,7 +31,6 @@ body {
 
 .bg-navy{background-color: var(--color-principal);}
 .bg-dark-gray{background-color: var(--color-dark-gray);}
-.bg-verde{background-color: var(--color-verde);}
 
 .btn-ok{
     color: var(--color-principal);
@@ -71,35 +70,46 @@ body {
 .font-poppins{
     font-family: 'Poppins';    
 } 
- 
+ /* Estilo para el radio button con apariencia de botón */
+ .opciones{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+ }
+ .opciones-card{
+    display: inline-flex;
+    max-width: 100%;
+    gap: 2em;
+    align-items: center;
+    flex-direction: column;
+ }
  .custom-radio {
     display: block;
     color: white;
     margin: 5px;
 }
-.custom-card label{
-    cursor: pointer;
-}
-.custom-card label h4{         
-    min-height: 72px;
-    padding: 18px 20px;
-    text-align: center;    
-    font-weight: 700;
-    align-items: center;
-    line-height: inherit;
-    margin-bottom: 0;
-    border-radius: 6px;
-    border: 2px solid white;
-    color: white;
+.custom-card label h4{     
+    text-align: center;
+    font-family: Mulish;
     font-size: 20px;
-
-    transition: all ease .2s;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fafafa;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light-gray); 
 } 
-/* Estilo para el radio button seleccionado */
-.custom-card input[type="radio"]:checked + label h4{
-    background-color: var(--color-verde); 
-    color: var(--color-principal);
-    border-color: var(--color-verde);
+.custom-card label>img{ 
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    margin:0;
+    filter: grayscale(99%);
 }
 
 .custom-radio label{
@@ -107,17 +117,15 @@ body {
     background-color: var(--color-dark-gray);
     border-radius: 6px;
     border: 2px solid white;
-    display: flex;
-    align-items: center;
     font-weight: 800;
+    padding: 10px 20px;
+    width: 100%;
     font-family: Mulish;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: inherit;
     transition: all ease 0.3s;
-    padding: 2px 20px;
-    width: 100%;
 }
 .custom-radio label:hover{
     background-color: var(--color-light-gray);
@@ -134,6 +142,14 @@ body {
     color: var(--color-principal);
 }
  
+/* Estilo para el radio button seleccionado */
+.custom-card input[type="radio"]:checked + label h4{
+    background-color: var(--color-verde); 
+    color: var(--color-principal);
+}
+.custom-card input[type="radio"]:checked + label>img{
+    filter: grayscale(0%);
+}
 .custom-radio input[type="radio"] + label svg path{
     fill:white;
 }
@@ -147,64 +163,10 @@ body {
 .custom-radio input[type="radio"]:checked + label svg rect{
     stroke: black; 
 }
-
-.custom-text-input{
-    max-width: 420px;
-}
-.custom-text-input, .custom-text-input:focus{
-    background-color: var(--color-principal);
-}
-.custom-text-input:focus{
-    box-shadow: 0 0 0 0.25rem var(--button-verde-hover);
-    outline-color: var(--color-verde);
-}
-.custom-text-input::placeholder{
-    color: rgba(255, 255, 255, .40);
-}
-.custom-text-input.placeholder-dark::placeholder{
-    color: rgba(1, 1, 1, .40);
-}
-header{
-    background: rgba(31, 38, 46, 0.70);
-    position: relative;
-    z-index: 9;
-}
-.image-full{
-    height: 100vh;
-    margin-top: -71px;
-}
-.image-full.step3{
-    background: url(../img/step3-bg-image.png) center/cover;
-}
-.image-full.step5{
-    background: url(../img/step5-bg-image.png) center/cover;
-}
-.image-full.step6{
-    background: url(../img/step6-bg-image.png) center/cover;
-}
 /* Media query para pantallas grandes (desktop) */
 @media screen and (min-width: 768px) {
     .custom-radio label {
-        font-size: 30px; /* Tamaño de fuente para desktop */
-    }    
-    .custom-card label h4{
-        padding: 8px 8px;
-        min-height: fit-content;
-        font-size: 18px;
-        border: none;
-        background-color: var(--color-light-gray);
-        border-radius: 0 0 6px 6px;
+        font-size: 36px; /* Tamaño de fuente para desktop */
     }
-    .custom-card label>img{ 
-        width: 100%;
-        height: auto;
-        left: 0;
-        top: 0;
-        margin:0;
-        border-radius: 6px 6px 0 0;
-        filter: grayscale(99%);
-    }
-    .custom-card input[type="radio"]:checked + label>img{
-        filter: grayscale(0%);
-    }
+    .opciones-card{flex-direction: row;}
 }
