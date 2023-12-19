@@ -24,7 +24,7 @@
 body {
     background-color:var(--color-principal);
     color: var(--color-principal);
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--mulish-font);
     font-size: 14px;
     line-height: 1.6;
   }
@@ -80,6 +80,9 @@ body {
 .calendar-widget{
     font-size: 16px;
 }
+.color-azul{
+    color: var(--color-azul);
+}
 
 .color-verde{
     color: var(--color-verde);
@@ -88,6 +91,13 @@ body {
     font-family: 'Poppins';    
 } 
  
+
+.center-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
  .custom-radio {
     display: block;
     color: white;
