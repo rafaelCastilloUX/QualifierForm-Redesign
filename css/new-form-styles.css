@@ -33,6 +33,13 @@ body {
 .bg-dark-gray{background-color: var(--color-dark-gray);}
 .bg-verde{background-color: var(--color-verde);}
 
+/* NEW ADDED */
+.bg-success{
+    background: url('../img/bgSuccess_mobile.png') no-repeat center;
+    background-size: cover;
+    
+}
+
 .btn-ok{
     color: var(--color-principal);
     background-color: var(--color-verde);
