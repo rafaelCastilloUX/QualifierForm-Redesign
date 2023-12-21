@@ -36,10 +36,23 @@ body {
 /* NEW ADDED */
 .bg-success{
     background: url('../img/bgSuccess_mobile.png') no-repeat center;
-    background-size: cover;
-    
+    background-size: cover;   
 }
-
+.bg-fail{
+    background: url('../img/bgFail_mobile.png') no-repeat center;
+    background-size: cover;   
+}
+.btn-outline-verde {
+    color: var(--color-verde);
+    border-color: var(--color-verde);
+    background-color: transparent;
+}
+.btn-outline-verde:hover, .btn-outline-verde:active{
+    color: white;
+    background-color: var(--color-verde);
+    box-shadow:  inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+/* ### */
 .btn-ok{
     color: var(--color-principal);
     background-color: var(--color-verde);
